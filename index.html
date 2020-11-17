@@ -10,6 +10,90 @@
     <link rel="stylesheet" href="./assets/css/style.css">
   </head>
   <body>
-
+    <section class="form">
+      <main class="form-contents">
+        <div class="inner start">
+          <h1>アカウント作成</h1>
+          <div class="start-link">
+            <a class="facebook" href="#">Facebookでスタート</a>
+            <a class="google" href="#">Googleでスタート</a>
+            <p>タイムラインへ投稿を行うことや、アカウント情報を伝えることはありません。</p>
+          </div>
+        </div>
+        <form class="inner entry" action="#" method="POST">
+          <h2>アカウント情報</h2>
+          <div class="contents name">
+            <div class="l-name">
+              <P>名字<span class="kome">※</span></p>
+              <input id="last-name" type="text" name="last-name">
+            </div>
+            <div class="f-name">
+              <P>名前<span class="kome">※</span></p>
+              <input id="first-name" type="text" name="last-name">
+            </div>
+            </div>
+          <div class="contents gender">
+            <p>性別</p>
+            <label class="gender-contents">
+              <input id="male" type="radio" name="gender" value="male"><span class="gender-text">男性</span>
+            </label>
+            <label class="gender-contents">
+              <input id="female" type="radio" name="gender" value="female"><span class="gender-text">女性</span>
+            </label>
+            <label class="gender-contents">
+              <input id="other" type="radio" name="gender" value="other"><span class="gender-text">その他</span>
+            </label>
+          </div>
+          <div class="contents local-select">
+            <p>出身</p>
+            <select name="local" id="local">
+              <option value="tokyo">東京</option>
+              <option value="chiba">千葉</option>
+              <option value="saitama"> 埼玉</option>
+              <option value="kanagawa">神奈川</option>
+            </select>
+          </div>
+          <div class="contents mail">
+            <p>Eメール<span class="kome">※</span></p>
+            <input class="full" id="email" type="email" name="email" placeholder="ex)hoge@example.com">
+          </div>
+          <div class="contents number"></div>  
+            <p>電話番号</p>
+            <input id="phone-number" type="number" name="phone-number" placeholder="ex)09012345678" style="width: 100%;">
+          <div class="contents pass">
+            <p>パスワード<span class="kome">※</span></p>
+            <input class="full" id="pw" type="password" name="pw">
+          </div>
+          <div class="contents pass-again">  
+            <p>パスワード（確認用）<span class="kome">※</span></p>
+            <input class="full" id="pw-again" type="password" name="pw-again">
+          </div>
+          <div class="contents cource-select">
+            <p>希望コース</p>
+            <label class="cource-contents">
+              <input type="checkbox" name="cource" id="front" value="front"><span class="cource-text">フロントエンド</span>
+            </label>
+            <label class="cource-contents">
+              <input type="checkbox" name="cource" id="back" value="back"><span class="cource-text">バックエンド</span>
+            </label>
+            <label class="cource-contents">
+              <input type="checkbox" name="cource" id="app" value="app"><span class="cource-text">アプリ</span>
+            </label>
+          </div>
+          <div class="contents remarks">
+            <p>備考</p>
+            <textarea class="full" name="comment" id="comment" cols="30" rows="10" placeholder="何かあればご記入ください"></textarea>
+          </div>
+          <div class="submit">
+            <button class="full" type="submit">アカウント作成</button>
+            <p>アカウントを作成することにより、<a href="#">利用規約</a>と<a href="#">プライバシーポリシー</a>に同意するものとします。</p>
+          </div>
+        </form>
+      </main>
+      <footer class="inner footer">
+        <p>すでにアカウントをお持ちですか？<a class="login" href="#">ログイン</a></p>
+        <a class="mail-reach" href="#">認証メールが届きませんか？</a>
+      </footer>
+    </section>
   </body>
-</html>
+</htm性別
